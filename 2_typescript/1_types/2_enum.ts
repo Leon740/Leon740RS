@@ -57,5 +57,5 @@
 
   fnGetUserType(objPerson1);
   fnGetUserType(objPerson2);
-  // fnGetUserType(objSmth);
+  fnGetUserType(objSmth);
 }
