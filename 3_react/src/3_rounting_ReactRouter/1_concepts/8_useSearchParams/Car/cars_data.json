@@ -1,0 +1,26 @@
+[
+  {
+    "mark": "Toyota",
+    "models": [
+      "Supra",
+      "Celica",
+      "Cresta"
+    ]
+  },
+  {
+    "mark": "Audi",
+    "models": [
+      "A6",
+      "Q5",
+      "S3"
+    ]
+  },
+  {
+    "mark": "BMW",
+    "models": [
+      "330",
+      "530",
+      "740"
+    ]
+  }
+]
