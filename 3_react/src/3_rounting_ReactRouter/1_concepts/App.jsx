@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import HomePage from '../2_tasks/9_useLocation/HomePage';
+import HomePage from './9_useLocation/HomePage';
 import ContactPage from './pages/ContactPage';
 import CarsList from './Components/Car/CarsList';
 import CarMark from './Components/Car/CarMark';
@@ -24,9 +24,15 @@ function App() {
             <NavLinkWrapper to="/carslist_default" end>
               CarsList_Default
             </NavLinkWrapper>
-            <NavLinkWrapper to="/carslist_nested_routes">Carslist_Nested_Routes</NavLinkWrapper>
-            <NavLinkWrapper to="/carslist_outlet">Carslist_Outlet</NavLinkWrapper>
-            <NavLinkWrapper to="/carslist_search_params">Carslist_Search_Params</NavLinkWrapper>
+            <NavLinkWrapper to="/carslist_nested_routes">
+              Carslist_Nested_Routes
+            </NavLinkWrapper>
+            <NavLinkWrapper to="/carslist_outlet">
+              Carslist_Outlet
+            </NavLinkWrapper>
+            <NavLinkWrapper to="/carslist_search_params">
+              Carslist_Search_Params
+            </NavLinkWrapper>
             <NavLinkWrapper to="/">Home</NavLinkWrapper>
             <NavLinkWrapper to="/contact">Contact</NavLinkWrapper>
             <NavLinkWrapper to="/about">NotFound</NavLinkWrapper>
@@ -53,11 +59,17 @@ function App() {
             </Route>
 
             {/* nested routes */}
-            <Route path="/carslist_nested_routes/*" element={<NestedRoutes />} />
+            <Route
+              path="/carslist_nested_routes/*"
+              element={<NestedRoutes />}
+            />
 
             {/* outlet */}
             <Route path="/carslist_outlet/*" element={<OutletExample />} />
-            <Route path="/carslist_search_params/*" element={<SearchParamsExample />} />
+            <Route
+              path="/carslist_search_params/*"
+              element={<SearchParamsExample />}
+            />
           </Routes>
         </main>
       </BrowserRouter>
